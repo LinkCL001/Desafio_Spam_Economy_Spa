@@ -1,7 +1,4 @@
-//Usar el paquete nodemailer para el envío de correos electrónicos. (3 Puntos
-const nodemailer = require("nodemailer");
-
-//Crear una función que reciba la lista de correos, asunto y contenido a enviar. Esta función debe retornar una promesa. (1 Punto
+const nodemailer = require("nodemailer");   //Usar el paquete nodemailer para el envío de correos electrónicos. (3 Puntos)
 
 const transporter = {
   service: "gmail",
