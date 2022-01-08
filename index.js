@@ -7,7 +7,7 @@ const enviarCorreo = require("./mailer");
 
 http
   .createServer(async (req, res) => {
-    const obtenerIndicadores = async () => {  //Realizar una petición a la api demindicador.clyprepararuntemplatequeincluyalosvalores del dólar, euro, uf y utm. Este template debe ser concatenado al mensaje descrito por el usuario en el formulario HTML. (2 Puntos)
+    const obtenerIndicadores = async () => {  //Realizar una petición a la api de mindicador.cl y preparar un template que incluya los valores del dólar, euro, uf y utm. Este template debe ser concatenado al mensaje descrito por el usuario en el formulario HTML. (2 Puntos)
       const { data } = await axios.get("https://mindicador.cl/api");
       const dolar = data.dolar.valor;
       const euro = data.euro.valor;
